@@ -175,13 +175,19 @@ $(window).load(function() {
         }
     })
 
-    // scroll
-    $('.scroll').cScroll({
-        duration:700,
-        step:63,
-        trackCl:'track',
-        shuttleCl:'shuttle'
-    })
+    
+    if(window.navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)) {
+        console.log('1');
+    }else{
+        console.log('2');
+        // scroll
+        $('.scroll').cScroll({
+            duration:700,
+            step:63,
+            trackCl:'track',
+            shuttleCl:'shuttle'
+        })
+    }
 
 
 
@@ -292,12 +298,6 @@ $(window).load(function() {
          */
     }
 
-    // if(window.navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)) {
-    //     console.log('1');
-    //     $('.centre').stop().animate({paddingTop:500})
-    // }else{
-    //     console.log('2');
-    // }
 
     var m_top=0, h_cont=730;
     function centre() {
