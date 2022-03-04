@@ -93,7 +93,7 @@ header{}
 #icons a{ display:block; position:relative;}
 #icons .img_act{ position:absolute; top:0; left:0}
 
-.scroll{height:308px; width:362px; overflow:hidden;}
+.scroll{height:308px; width:362px; overflow-y:auto;}
 .track{ width:22px; height:287px; padding:24px 0; top:28px !important; left:366px !important; background: url(../images/scroll_track.jpg) 0 0 no-repeat}
 .shuttle{ width:16px; height:16px; background: url(../images/scroll_drag.png) 0 0 no-repeat; margin-left:3px;}
 ._up-butt, ._down-butt{ height:0px !important;}

@@ -292,6 +292,13 @@ $(window).load(function() {
          */
     }
 
+    // if(window.navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i)) {
+    //     console.log('1');
+    //     $('.centre').stop().animate({paddingTop:500})
+    // }else{
+    //     console.log('2');
+    // }
+
     var m_top=0, h_cont=730;
     function centre() {
         var h=$(window).height();
@@ -303,7 +310,7 @@ $(window).load(function() {
         $('.centre').stop().animate({paddingTop:m_top})
 
     }
-    centre();
+    // centre();
     $(window).resize(centre);
 
 })
